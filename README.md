@@ -29,7 +29,6 @@ The project provides secure authentication, role-based authorization, category m
 
 ## Dashboard
 
-```
 [dashboard-amin ]
 
 <img width="1913" height="942" alt="Screenshot 2026-07-25 122646" src="https://github.com/user-attachments/assets/5f930eb5-cd4a-4635-95c4-32a74f96306c" />
@@ -39,21 +38,19 @@ The project provides secure authentication, role-based authorization, category m
 
 <img width="1462" height="953" alt="Screenshot 2026-07-25 123327" src="https://github.com/user-attachments/assets/8d70e6f1-ac33-4a38-8555-2c1f1a1ea3d3" />
 
-```
+
 
 ## Product List
 
-```
 <img width="1761" height="944" alt="Screenshot 2026-07-25 122756" src="https://github.com/user-attachments/assets/0552f2a2-ea25-464f-a29e-66ea9adf2a75" />
 
-```
+
 
 ## Categories
 
-```
+
 <img width="1636" height="624" alt="Screenshot 2026-07-25 122834" src="https://github.com/user-attachments/assets/c566eea2-84c6-44a6-b17b-e790d2223dda" />
 
-```
 
 ---
 
