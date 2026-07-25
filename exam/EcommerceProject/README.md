@@ -17,10 +17,9 @@ The project provides secure authentication, role-based authorization, category m
 
 ## register
 
-```
+
 ![register](image-5.png)
 
-```
 
 ## login
 
