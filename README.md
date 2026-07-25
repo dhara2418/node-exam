@@ -17,19 +17,15 @@ The project provides secure authentication, role-based authorization, category m
 
 ## register
 
-```
+
 <img width="1054" height="971" alt="Screenshot 2026-07-25 123436" src="https://github.com/user-attachments/assets/e61541f2-5c4c-41a1-99ad-68972f38e175" />
 
 
-```
-
 ## login
 
-```
 <img width="1559" height="948" alt="Screenshot 2026-07-25 123058" src="https://github.com/user-attachments/assets/7ecd88a8-b3ee-4838-825b-1e3f8c7e40f9" />
 
 
-```
 
 ## Dashboard
 
