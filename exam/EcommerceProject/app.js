@@ -8,6 +8,7 @@ const methodOverride = require("method-override");
 const jwt = require("jsonwebtoken");
 const Product = require("./models/Product");
 const Category = require("./models/Category");
+const User = require("./models/User");
 require("dotenv").config();
 
 // Database
@@ -113,14 +114,34 @@ app.use("/", categoryRoutes);
 // ======================
 app.get("/", authMiddleware, async (req, res) => {
 
-    const totalProducts = await Product.countDocuments();
+    try {
 
-    const totalCategories = await Category.countDocuments();
+        const totalProducts = await Product.countDocuments();
 
-    res.render("index", {
-        totalProducts,
-        totalCategories
-    });
+        const totalCategories = await Category.countDocuments();
+
+        const totalUsers = await User.countDocuments();
+
+        const myProducts = await Product.countDocuments({
+            user: req.user.id
+        });
+
+        res.render("index", {
+            totalProducts,
+            totalCategories,
+            totalUsers,
+            myProducts
+        });
+
+    } catch (error) {
+
+        console.log(error);
+
+        req.flash("error", "Unable to load dashboard");
+
+        res.redirect("/login");
+
+    }
 
 });
 

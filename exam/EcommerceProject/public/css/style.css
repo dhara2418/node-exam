@@ -1,14 +1,44 @@
+/* ==========================
+   Global
+========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(180deg, #f5f7fb, #eef2ff);
+    min-height: 100vh;
+    color: #212529;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==========================
+   Navbar
+========================== */
+
 .navbar {
-    padding: 12px 0;
+    background: #212529 !important;
+    padding: 15px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
 }
 
 .navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffc107 !important;
     letter-spacing: 1px;
 }
 
 .nav-link {
+    color: #fff !important;
     font-weight: 500;
-    transition: all 0.3s ease;
+    margin: 0 6px;
+    transition: .3s;
 }
 
 .nav-link:hover {
@@ -16,38 +46,228 @@
     transform: translateY(-2px);
 }
 
+/* ==========================
+   Buttons
+========================== */
+
 .btn {
-    transition: all 0.3s ease;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: .3s;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.18);
 }
 
-.hero-banner{
+/* ==========================
+   Hero Banner
+========================== */
+
+.hero-banner {
     background: linear-gradient(135deg,#4f46e5,#7c3aed);
-    color:#fff;
+    color: white;
+    padding: 50px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
 }
 
-.dashboard-card{
-    border:none;
-    border-radius:18px;
-    transition:.3s;
+.hero-banner h1,
+.hero-banner h2{
+    font-weight:700;
 }
 
-.dashboard-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,0,0,.15)!important;
+.hero-banner p{
+    opacity:.95;
 }
 
-.quick-btn{
-    border-radius:30px;
-    padding:12px 25px;
-    font-weight:600;
-    transition:.3s;
+/* ==========================
+   Dashboard Cards
+========================== */
+
+.dashboard-card {
+    border: none;
+    border-radius: 20px;
+    transition: .35s;
+    overflow: hidden;
 }
 
-.quick-btn:hover{
-    transform:translateY(-3px);
+.dashboard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.18)!important;
+}
+
+.dashboard-card i {
+    font-size: 55px;
+    transition: .35s;
+}
+
+.dashboard-card:hover i {
+    transform: scale(1.15);
+}
+
+/* ==========================
+   Quick Buttons
+========================== */
+
+.quick-btn {
+    border-radius: 30px;
+    padding: 12px 28px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.quick-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ==========================
+   Product Cards
+========================== */
+
+.product-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .35s;
+    background: white;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.18);
+}
+
+.product-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+.product-card .badge{
+    border-radius:20px;
+    padding:8px 14px;
+}
+
+/* ==========================
+   Tables
+========================== */
+
+.table {
+    overflow: hidden;
+    border-radius: 18px;
+    background: white;
+}
+
+.table thead {
+    background: #4f46e5;
+    color: white;
+}
+
+.table tbody tr {
+    transition: .3s;
+}
+
+.table tbody tr:hover {
+    background: #f5f7ff;
+}
+
+/* ==========================
+   Forms
+========================== */
+
+.form-control,
+.form-select {
+    border-radius: 14px;
+    padding: 12px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 .2rem rgba(79,70,229,.20);
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+/* ==========================
+   Badges
+========================== */
+
+.badge{
+    padding:8px 14px;
+    border-radius:20px;
+}
+
+/* ==========================
+   Alerts
+========================== */
+
+.alert {
+    border: none;
+    border-radius: 15px;
+    animation: fadeDown .4s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer {
+    margin-top: 70px;
+    background: #212529;
+    color: white;
+    padding: 30px 0;
+}
+
+footer p{
+    margin-bottom:0;
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#4f46e5;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ececec;
+}
+
+/* ==========================
+   Animations
+========================== */
+
+@keyframes fadeDown {
+
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
 }
