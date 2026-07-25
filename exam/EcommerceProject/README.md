@@ -23,30 +23,29 @@ The project provides secure authentication, role-based authorization, category m
 
 ## login
 
-```
+
 ![login](image-3.png)
 
-```
+
 
 ## Dashboard
 
-```
+
 ![dashboard-amin ](image.png)
 
 ![dashboard-uer](image-4.png)
-```
+
 
 ## Product List
 
-```
 ![product](image-1.png)
-```
+
 
 ## Categories
 
-```
+
 ![categories](image-2.png)
-```
+
 
 ---
 
