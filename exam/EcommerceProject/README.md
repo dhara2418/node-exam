@@ -269,8 +269,6 @@ http://localhost:9090
 
 **Dhara Parekh**
 
-B.Sc. IT Student
-
 Node.js • Express.js • MongoDB • EJS • Bootstrap
 
 ---
